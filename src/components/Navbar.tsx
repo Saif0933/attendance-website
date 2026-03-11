@@ -1,23 +1,32 @@
-import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Download, MapPin } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <div className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg accent-gradient">
-            <MapPin className="h-5 w-5 text-primary-foreground" />
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/70 backdrop-blur-xl glass-morphism">
+      <div className="container mx-auto flex h-20 items-center justify-between px-6">
+        <div className="flex items-center gap-3 group cursor-pointer">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl accent-gradient shadow-lg group-hover:rotate-12 transition-transform duration-300">
+            <MapPin className="h-6 w-6 text-primary-foreground" />
           </div>
-          <span className="font-display text-xl font-bold text-foreground">My Attendance</span>
+          <span className="font-display text-2xl font-bold tracking-tight text-foreground transition-all group-hover:opacity-80">
+            My Attendance
+          </span>
         </div>
-        <div className="hidden items-center gap-8 md:flex">
-          <a href="#features" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Features</a>
-          <a href="#how-it-works" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">How It Works</a>
-          <a href="#admin" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Admin</a>
+        
+        <div className="hidden items-center gap-12 md:flex">
+          <a href="#features" className="relative text-sm font-bold text-muted-foreground transition-all hover:text-primary group">
+            Features
+            <span className="absolute -bottom-1.5 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+          </a>
+          <a href="#how-it-works" className="relative text-sm font-bold text-muted-foreground transition-all hover:text-primary group">
+            How It Works
+            <span className="absolute -bottom-1.5 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+          </a>
         </div>
-        <Button size="sm" className="accent-gradient border-0 text-primary-foreground shadow-button hover:opacity-90">
-          Get Started
+        
+        <Button size="lg" className="accent-gradient border-0 text-primary-foreground shadow-button hover:opacity-90 gap-2 h-12 px-7 rounded-2xl font-bold">
+          <Download className="h-5 w-5" /> Download App
         </Button>
       </div>
     </nav>
