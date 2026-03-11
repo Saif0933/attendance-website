@@ -25,7 +25,7 @@ const HeroSection = () => {
               <Button size="lg" className="accent-gradient border-0 text-primary-foreground shadow-button hover:opacity-90 gap-2">
                 Get Started <ArrowRight className="h-4 w-4" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 gap-2">
+              <Button size="lg" variant="outline" className="border-primary-foreground/40 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 gap-2">
                 <Download className="h-4 w-4" /> Download App
               </Button>
             </div>
