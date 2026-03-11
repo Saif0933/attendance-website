@@ -14,7 +14,7 @@ const HeroSection = () => {
             </div>
             <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-primary-foreground md:text-5xl lg:text-6xl text-balance">
               Smart Attendance,{" "}
-              <span className="bg-gradient-to-r from-[hsl(170,60%,50%)] to-[hsl(180,55%,55%)] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[hsl(210,80%,60%)] to-[hsl(230,70%,65%)] bg-clip-text text-transparent">
                 Simplified.
               </span>
             </h1>
